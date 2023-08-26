@@ -1,0 +1,45 @@
+:root {
+    --header-color: darkcyan;
+    --background-color: azure;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    
+}
+
+body {
+    background: var(--background-color);
+}
+
+header {
+    display: flex;
+    background: var(--header-color);
+    padding: 2%;
+    align-content:center;
+    color: var(--background-color);
+}
+
+.header-img {
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+
+h1 {
+    font-size: 300%;
+    margin: 10px; 
+}
+
+nav {
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+a {
+    color: var(--background-color);
+    font-size: 150%;
+}
+
+
