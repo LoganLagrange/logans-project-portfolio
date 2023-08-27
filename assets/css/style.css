@@ -1,35 +1,39 @@
+/*Set variables for 2 main colors used on page*/
 :root {
     --header-color: darkcyan;
     --background-color: azure;
 }
 
+/*Set font family and main background for page*/
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-    
+
 }
 
 body {
     background: var(--background-color);
 }
 
+/*Header styles*/
 header {
     display: flex;
     background: var(--header-color);
     padding: 2%;
-    align-content:center;
+    align-items: center;
     color: var(--background-color);
 }
 
 .header-img {
-    height: 80px;
+    min-height: 90px;
+    height: 10vh;
     border: 2px solid black;
     border-radius: 50%;
-
 }
 
 h1 {
     font-size: 300%;
-    margin: 10px; 
+    margin: 10px;
+
 }
 
 nav {
@@ -37,9 +41,86 @@ nav {
     align-self: flex-end;
 }
 
-a {
+nav a {
     color: var(--background-color);
     font-size: 150%;
+    margin: 10px;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
+}
+
+/*Styles for all of the sections and headings*/
+section {
+    margin: 10px 30px 10px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
+}
+
+h2 {
+    color: var(--header-color);
+    font-size: 200%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/*Sets size, position, and color of about me paragraph*/
+p {
+    display: inline;
+    font-size: 110%;
+    margin: 10px;
+    color: var(--header-color);
+    max-width: 50%;
+    line-height: 115%;
+}
+
+.work-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.work-example-img {
+    max-height: 500px;
+    width: 45j%;
+    border: 5px solid var(--header-color);
+    margin: 10px;
+}
+
+.first-img {
+    max-height: 500px;
+    width: 90%;
+    border: 5px solid var(--header-color);
+    margin: 10px;
+    flex: 2;
+}
+
+.work-link {
+    justify-content: center;
+    display: inline-flex;
+}
+
+.heading-aside {
+    float: left;
+    width: 20%;
+    align-items: stretch;
+    border-right: 2px solid var(--header-color);
+    text-align: right;
+    margin: 10px;
+    min-width: 10%;
+
+}
+
+.img-text {
+    background: var(--header-color);
+    color: var(--background-color);
+    font-size: 115%;
+    position: absolute;
+    padding: 3px var(--header-color);
+}
