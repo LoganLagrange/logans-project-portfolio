@@ -47,19 +47,11 @@ nav a {
     margin: 10px;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
 
-}
 
 /*Styles for all of the sections and headings*/
 section {
     margin: 10px 30px 10px 30px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex: 0 1 auto;
 }
 
 h2 {
@@ -75,7 +67,7 @@ p {
     font-size: 110%;
     margin: 10px;
     color: var(--header-color);
-    max-width: 50%;
+    
     line-height: 115%;
 }
 
@@ -88,7 +80,7 @@ p {
 
 .work-example-img {
     max-height: 500px;
-    width: 45j%;
+    width: 45%;
     border: 5px solid var(--header-color);
     margin: 10px;
 }
@@ -109,18 +101,29 @@ p {
 .heading-aside {
     float: left;
     width: 20%;
-    align-items: stretch;
     border-right: 2px solid var(--header-color);
     text-align: right;
     margin: 10px;
     min-width: 10%;
+    height: 100%;
+    padding-right: 20px;
+}
 
+figure {
+    position: relative;
 }
 
 .img-text {
     background: var(--header-color);
     color: var(--background-color);
-    font-size: 115%;
+    font-size: 120%;
     position: absolute;
-    padding: 3px var(--header-color);
+    padding: 10px;
+    background-color: var(--header-color);
+    bottom: 75px;
+    left: 13px;
+}
+
+img:hover {
+    filter: contrast(50%);
 }
